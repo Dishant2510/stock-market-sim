@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+venv/
+*.db
+*.db-shm
+*.db-wal
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Data (large files, not needed in repo)
+stock-market-sim/backend/stock_data/*.parquet
