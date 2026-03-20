@@ -283,12 +283,10 @@ async def persist_tick(market: MarketState, db) -> None:
             tick     = state.tick,
         )
 
-    await db.commit()
 
     # Prune old history every 100 ticks
     if market.global_tick % 100 == 0:
         await prune_price_history(db, keep_ticks=500)
-        await db.commit()
         log.debug(f"Price history pruned at tick {market.global_tick}")
 
 

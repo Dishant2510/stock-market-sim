@@ -180,7 +180,6 @@ async def execute_trade(
         cash_before = cash_before,
         cash_after  = cash_after,
     )
-    await db.commit()
 
     # ── Register for next tick imbalance ──────────────────────────────────────
     await register_pending(ticker, action, qty)
