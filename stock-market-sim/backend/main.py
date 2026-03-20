@@ -331,14 +331,14 @@ async def get_portfolio(
             "pnl_pct":       pnl_pct,
         })
 
-    total_value = round(user["cash"] + holdings_value, 4)
-    total_pnl   = round(total_value - 100_000.0, 4)
+    total_value = round(float(user["cash"]) + holdings_value, 4)
+    total_pnl   = round(float(total_value) - 100_000.0, 4)
 
     return {
         "user_id":        user_id,
         "username":       user["username"],
-        "cash":           user["cash"],
-        "holdings_value": round(holdings_value, 4),
+        "cash":           float(user["cash"]),
+        "holdings_value": round(float(holdings_value), 4),
         "total_value":    total_value,
         "total_pnl":      total_pnl,
         "holdings":       enriched,

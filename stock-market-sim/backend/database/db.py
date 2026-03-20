@@ -64,11 +64,19 @@ async def get_db_dep():
 
 
 # asyncpg returns Record objects — convert to plain dicts
+# Also cast Decimal to float so arithmetic works in Python
+from decimal import Decimal
+
+def _cast(v):
+    if isinstance(v, Decimal):
+        return float(v)
+    return v
+
 def _row(r) -> dict:
-    return dict(r) if r else None
+    return {k: _cast(v) for k, v in dict(r).items()} if r else None
 
 def _rows(rs) -> list[dict]:
-    return [dict(r) for r in rs]
+    return [{k: _cast(v) for k, v in dict(r).items()} for r in rs]
 
 
 # ─── USER HELPERS ─────────────────────────────────────────────────────────────
