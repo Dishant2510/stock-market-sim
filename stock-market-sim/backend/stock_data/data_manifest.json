@@ -1,0 +1,810 @@
+{
+  "initialized_at": "2026-03-05 00:22:05.647102",
+  "tickers_total": 100,
+  "tickers_ok": 0,
+  "garch_fitted": 90,
+  "anchors_set": 100,
+  "news_headlines": 0,
+  "status": {
+    "AAPL": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 263.69,
+      "sigma_daily": 0.013786144877173235
+    },
+    "MSFT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 403.79,
+      "sigma_daily": 0.012738907415083026
+    },
+    "NVDA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 180.05,
+      "sigma_daily": 0.02824458761067508
+    },
+    "GOOGL": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 303.53,
+      "sigma_daily": 0.015039230878391317
+    },
+    "META": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 654.991,
+      "sigma_daily": 0.017792980122676424
+    },
+    "AMZN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 208.63,
+      "sigma_daily": 0.01670094203714728
+    },
+    "TSLA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 392.355,
+      "sigma_daily": 0.03207670400733238
+    },
+    "AMD": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 190.99,
+      "sigma_daily": 0.02813681536185327
+    },
+    "INTC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 43.12,
+      "sigma_daily": 0.037815840154433775
+    },
+    "ORCL": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 149.01,
+      "sigma_daily": 0.02588794732592843
+    },
+    "JPM": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 300.26,
+      "sigma_daily": 0.012676465122613093
+    },
+    "BAC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 49.97,
+      "sigma_daily": 0.01265119160058671
+    },
+    "GS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 862.58,
+      "sigma_daily": 0.016621520168969887
+    },
+    "MS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 165.95,
+      "sigma_daily": 0.015662500705072226
+    },
+    "WFC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 82.53,
+      "sigma_daily": 0.01560432854227714
+    },
+    "BLK": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 1052.59,
+      "sigma_daily": 0.012128446233406991
+    },
+    "AXP": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 307.82,
+      "sigma_daily": 0.014846797271427343
+    },
+    "C": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 110.76,
+      "sigma_daily": 0.01588680121183932
+    },
+    "USB": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 53.99,
+      "sigma_daily": 0.013249432283829072
+    },
+    "PNC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 213.05,
+      "sigma_daily": 0.012416493927371174
+    },
+    "JNJ": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 246.75,
+      "sigma_daily": 0.009544973773489404
+    },
+    "UNH": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 289.21,
+      "sigma_daily": 0.012
+    },
+    "PFE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 26.58,
+      "sigma_daily": 0.012513353685301487
+    },
+    "ABBV": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 233.86,
+      "sigma_daily": 0.013231830303370285
+    },
+    "MRK": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 119.83,
+      "sigma_daily": 0.013451356941079368
+    },
+    "LLY": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 1007.73,
+      "sigma_daily": 0.02150122818776135
+    },
+    "TMO": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 508.1,
+      "sigma_daily": 0.013923466297023013
+    },
+    "ABT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 113.61,
+      "sigma_daily": 0.012
+    },
+    "BMY": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 61.22,
+      "sigma_daily": 0.014776564719325619
+    },
+    "AMGN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 377.0,
+      "sigma_daily": 0.013843197716478904
+    },
+    "XOM": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 151.83,
+      "sigma_daily": 0.011168559178267768
+    },
+    "CVX": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 188.77,
+      "sigma_daily": 0.010866651228772466
+    },
+    "CAT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 722.18,
+      "sigma_daily": 0.015362764678932835
+    },
+    "BA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 224.12,
+      "sigma_daily": 0.017314855391156164
+    },
+    "HON": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 243.93,
+      "sigma_daily": 0.01277434905917861
+    },
+    "GE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 334.14,
+      "sigma_daily": 0.015913040966998075
+    },
+    "WMT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 127.91,
+      "sigma_daily": 0.011443143363788509
+    },
+    "KO": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 79.34,
+      "sigma_daily": 0.008687283515163263
+    },
+    "PG": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 159.72,
+      "sigma_daily": 0.009287553777052069
+    },
+    "MCD": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "large",
+      "anchor": 332.17,
+      "sigma_daily": 0.009146676363273263
+    },
+    "DDOG": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 111.75,
+      "sigma_daily": 0.14205893702370612
+    },
+    "ZS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 154.67,
+      "sigma_daily": 0.0435633085218581
+    },
+    "OKTA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 72.55,
+      "sigma_daily": 0.03512103802898731
+    },
+    "TWLO": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 123.51,
+      "sigma_daily": 0.050397818676244314
+    },
+    "BILL": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 43.74,
+      "sigma_daily": 0.04869888480639617
+    },
+    "DOCU": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 46.76,
+      "sigma_daily": 0.03584696611064841
+    },
+    "HUBS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 275.37,
+      "sigma_daily": 0.0373575448748755
+    },
+    "NET": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 178.91,
+      "sigma_daily": 0.03834283018428638
+    },
+    "MDB": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 252.75,
+      "sigma_daily": 0.05858317152177754
+    },
+    "ESTC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 52.68,
+      "sigma_daily": 0.040611732144521503
+    },
+    "HOOD": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 76.07,
+      "sigma_daily": 0.05362561633257421
+    },
+    "SOFI": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 18.61,
+      "sigma_daily": 0.043913587229356954
+    },
+    "ALLY": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 39.88,
+      "sigma_daily": 0.02568665443252045
+    },
+    "OMF": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 54.93,
+      "sigma_daily": 0.026548087723371586
+    },
+    "CURO": {
+      "rows": 0,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 100.0,
+      "sigma_daily": null
+    },
+    "PFSI": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 89.76,
+      "sigma_daily": 0.1391624900540417
+    },
+    "RKT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 16.43,
+      "sigma_daily": 0.04297928325891402
+    },
+    "UWMC": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 4.25,
+      "sigma_daily": 0.03808235889180913
+    },
+    "ENVA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 141.43,
+      "sigma_daily": 0.029308645012524368
+    },
+    "LDI": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 1.86,
+      "sigma_daily": 0.06278957322428702
+    },
+    "EXAS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 103.35,
+      "sigma_daily": 0.0444645135156981
+    },
+    "INVA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 22.315,
+      "sigma_daily": 0.03
+    },
+    "ACAD": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 22.5,
+      "sigma_daily": 0.03477916763175468
+    },
+    "JAZZ": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 186.67,
+      "sigma_daily": 0.028288080140739018
+    },
+    "IONS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 78.68,
+      "sigma_daily": 0.03904014802468337
+    },
+    "ONTO": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 207.5,
+      "sigma_daily": 0.04988063562752961
+    },
+    "NVST": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 28.67,
+      "sigma_daily": 0.03300945999892754
+    },
+    "OMCL": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 40.8,
+      "sigma_daily": 0.04073951248201638
+    },
+    "NVCR": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 13.3,
+      "sigma_daily": 0.06647706744826128
+    },
+    "PRGO": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 11.39,
+      "sigma_daily": 0.03
+    },
+    "FIVE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 221.575,
+      "sigma_daily": 0.0465770051844848
+    },
+    "RH": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 155.85,
+      "sigma_daily": 0.07652414702983942
+    },
+    "BOOT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 186.8,
+      "sigma_daily": 0.03799006663963699
+    },
+    "DXPE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 140.72,
+      "sigma_daily": 0.03688993751355792
+    },
+    "SFM": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "mid",
+      "anchor": 78.01,
+      "sigma_daily": 0.07295523657344787
+    },
+    "MARA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 8.665,
+      "sigma_daily": 0.14259754747571785
+    },
+    "RIOT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 15.29,
+      "sigma_daily": 0.13819266455007553
+    },
+    "CIFR": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 14.7,
+      "sigma_daily": 0.17661766729546363
+    },
+    "HUT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 47.61,
+      "sigma_daily": 0.15885938110499215
+    },
+    "CLSK": {
+      "rows": 499,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 9.885,
+      "sigma_daily": 0.152927180184745
+    },
+    "BITF": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 1.98,
+      "sigma_daily": 0.15617834309894002
+    },
+    "WULF": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 14.74,
+      "sigma_daily": 0.1849891770065638
+    },
+    "BTBT": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 1.67,
+      "sigma_daily": 0.1614549078644606
+    },
+    "MGNI": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 13.775,
+      "sigma_daily": 0.09820410573344077
+    },
+    "KOPN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 2.265,
+      "sigma_daily": 0.15792230823504522
+    },
+    "SAVA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 2.21,
+      "sigma_daily": 0.20885564822476105
+    },
+    "AGEN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 3.18,
+      "sigma_daily": 0.19640056071647016
+    },
+    "OCGN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 1.86,
+      "sigma_daily": 0.13102177833116732
+    },
+    "NVAX": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 9.495,
+      "sigma_daily": 0.17231405520232362
+    },
+    "ADMA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 16.38,
+      "sigma_daily": 0.09902364328326954
+    },
+    "ATHA": {
+      "rows": 0,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 100.0,
+      "sigma_daily": null
+    },
+    "MNKD": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 2.925,
+      "sigma_daily": 0.125
+    },
+    "ARDX": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 6.23,
+      "sigma_daily": 0.11990278203677754
+    },
+    "TELA": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 0.843,
+      "sigma_daily": 0.11593492692170748
+    },
+    "APRE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 0.8586,
+      "sigma_daily": 0.12432425249638611
+    },
+    "CLOV": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 1.995,
+      "sigma_daily": 0.12112992522004769
+    },
+    "SPCE": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 2.54,
+      "sigma_daily": 0.1605512810912032
+    },
+    "KOSS": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 4.21,
+      "sigma_daily": 0.125
+    },
+    "EXPR": {
+      "rows": 0,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 100.0,
+      "sigma_daily": null
+    },
+    "OPEN": {
+      "rows": 500,
+      "ok": false,
+      "reason": null,
+      "cap_tier": "small",
+      "anchor": 4.96,
+      "sigma_daily": 0.125
+    }
+  }
+}

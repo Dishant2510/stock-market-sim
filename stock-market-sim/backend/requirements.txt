@@ -1,0 +1,30 @@
+# ─── API SERVER ───────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-dotenv==1.0.1
+pydantic==2.7.1
+
+# ─── DATA FETCHING ────────────────────────────────────────────────────────────
+yfinance==0.2.40
+requests==2.31.0
+pandas==2.2.2
+numpy==1.26.4
+
+# ─── STORAGE ──────────────────────────────────────────────────────────────────
+pyarrow==16.1.0          # for reading/writing .parquet files
+
+# ─── VOLATILITY MODEL ─────────────────────────────────────────────────────────
+arch==6.3.0              # GARCH(1,1) fitting
+
+# ─── SENTIMENT ────────────────────────────────────────────────────────────────
+vaderSentiment==3.3.2
+transformers==4.41.2     # FinBERT via HuggingFace
+torch==2.3.0             # Required by transformers (CPU-only is fine)
+scikit-learn==1.5.0      # Label encoding, train/test split for FinBERT fine-tune
+
+# ─── DATABASE ─────────────────────────────────────────────────────────────────
+# ─── DATABASE ─────────────────────────────────────────────────────────────────
+asyncpg==0.29.0
+# ─── UTILITIES ────────────────────────────────────────────────────────────────
+httpx==0.27.0            # Async HTTP client (used in news engine for Claude API)
+python-multipart==0.0.9  # Required by FastAPI for form data
