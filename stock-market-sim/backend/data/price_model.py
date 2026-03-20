@@ -17,10 +17,15 @@ Reads from: stock_data/raw/{cap_tier}/TICKER.csv  (written by fetcher.py)
 import json
 import logging
 import warnings
-import numpy as np
-import pandas as pd
 from pathlib import Path
-from arch import arch_model
+
+# Heavy imports done lazily so price_engine can import load_anchor_prices
+# and load_volatility_params without triggering pandas/arch at startup
+def _lazy_imports():
+    import numpy as np
+    import pandas as pd
+    from arch import arch_model
+    return np, pd, arch_model
 
 from config import (
     ALL_TICKERS,
@@ -33,7 +38,6 @@ from config import (
     ANCHOR_PRICES_FILE,
     STOCK_DATA_DIR,
 )
-from data.fetcher import load_ticker_csv
 
 warnings.filterwarnings("ignore")  # Suppress GARCH convergence warnings
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -42,7 +46,8 @@ log = logging.getLogger(__name__)
 
 # ─── FEATURE ENGINEERING ─────────────────────────────────────────────────────
 
-def engineer_features(df: pd.DataFrame, ticker: str) -> pd.DataFrame:
+def engineer_features(df, ticker: str) :
+    np, pd, arch_model = _lazy_imports()
     """
     Takes raw OHLCV DataFrame and adds features needed by the simulation
     engine and sentiment model.
@@ -92,7 +97,8 @@ def engineer_features(df: pd.DataFrame, ticker: str) -> pd.DataFrame:
 
 # ─── GARCH FITTING ────────────────────────────────────────────────────────────
 
-def fit_garch(returns: pd.Series, ticker: str) -> dict:
+def fit_garch(returns, ticker: str) -> dict:
+    np, pd, arch_model = _lazy_imports()
     """
     Fit a GARCH(1,1) model on daily log returns.
     Returns a dict with omega, alpha[1], beta[1], and long-run sigma.
@@ -147,6 +153,7 @@ def fit_garch(returns: pd.Series, ticker: str) -> dict:
 # ─── FIT ALL TICKERS ─────────────────────────────────────────────────────────
 
 def fit_all_volatility_models() -> dict:
+    np, pd, arch_model = _lazy_imports()
     """
     Fit GARCH for all 100 tickers. Saves results to volatility_params.json.
     Returns the full params dict.
@@ -196,6 +203,7 @@ def fit_all_volatility_models() -> dict:
 # ─── ANCHOR PRICES ────────────────────────────────────────────────────────────
 
 def compute_anchor_prices() -> dict:
+    np, pd, arch_model = _lazy_imports()
     """
     Anchor price = most recent closing price from historical data.
     This is what the simulation uses as its starting price and mean-reversion target.
@@ -227,6 +235,7 @@ def compute_anchor_prices() -> dict:
 # ─── PROCESS & SAVE PARQUET FILES ─────────────────────────────────────────────
 
 def process_all_tickers() -> None:
+    np, pd, arch_model = _lazy_imports()
     """
     Runs feature engineering on all tickers and saves one parquet per cap tier.
 
@@ -284,7 +293,8 @@ def load_anchor_prices() -> dict:
         return json.load(f)
 
 
-def load_processed(tier: str) -> pd.DataFrame:
+def load_processed(tier: str) :
+    np, pd, arch_model = _lazy_imports()
     """Load processed parquet for a given cap tier."""
     path = PROCESSED_FILES.get(tier)
     if not path or not path.exists():
