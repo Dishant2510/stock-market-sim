@@ -19,7 +19,6 @@ import asyncio
 from typing import Optional
 from dataclasses import dataclass
 
-import aiosqlite
 
 from config import TICKER_CAP_MAP, ALL_TICKERS
 from engine.price_engine import MarketState
@@ -77,7 +76,7 @@ class TradeResult:
 # ─── CORE TRADE EXECUTION ─────────────────────────────────────────────────────
 
 async def execute_trade(
-    db:       aiosqlite.Connection,
+    db,
     market:   MarketState,
     user_id:  int,
     ticker:   str,
