@@ -37,6 +37,7 @@ async def get_pool() -> asyncpg.Pool:
             max_size=10,
             command_timeout=30,
             ssl="require",
+            statement_cache_size=0,   # Required for Supabase pooler
         )
         log.info("PostgreSQL connection pool created")
     return _pool
