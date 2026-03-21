@@ -6,7 +6,7 @@ const fmtD = n => (n < 0 ? "-$" : "$") + Math.abs(n).toLocaleString("en-US", { m
 
 // ─── CANDLESTICK CHART ────────────────────────────────────────────────────────
 
-const CANDLE_TICKS = 10;   // How many price ticks form one candle
+const CANDLE_TICKS = 3;   // How many price ticks form one candle
 const MAX_CANDLES  = 60;   // Max candles shown at once
 const CHART_H      = 180;
 const PADDING      = { top: 10, bottom: 20, left: 8, right: 48 };
